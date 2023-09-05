@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="#99000000"
+                android:textColor="@color/lightblack"
                 android:text="Enter Your details below"
                 app:layout_constraintEnd_toEndOf="@+id/tvWelcome"
                 app:layout_constraintStart_toStartOf="@+id/tvWelcome"
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="Welcome"
-                android:textColor="#99000000"
+                android:textColor="@color/lightblack"
                 android:fontFamily="@font/arbutus"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -72,6 +72,8 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 app:boxBackgroundColor="#FFFFFF"
+                android:textColorHint="@color/lightblack"
+                app:startIconTint="@color/lightblack"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="#009688"
                 app:endIconMode="clear_text"
@@ -86,8 +88,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/email_id"
-                    android:textColorHint="@color/black"
-                    android:textColor="@color/black"
+                    android:textColor="@color/lightblack"
+                    android:textColorHighlight="@color/bar"
                     android:inputType="textWebEmailAddress|textPersonName" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,7 +104,11 @@
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="#009688"
                 app:counterEnabled="true"
+                android:textColorHint="@color/lightblack"
+                app:endIconTint="@color/lightblack"
+                app:startIconTint="@color/lightblack"
                 app:counterMaxLength="15"
+                app:counterTextColor="@color/lightblack"
                 app:endIconMode="password_toggle"
                 app:errorEnabled="true"
                 app:layout_constraintEnd_toEndOf="@+id/et_email"
@@ -115,6 +121,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/pass"
+                    android:textColor="@color/lightblack"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -125,19 +132,13 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/but_shape"
                 android:text="LOGin"
+                android:textColor="@color/lightblack"
                 app:layout_constraintEnd_toEndOf="@+id/et_pass"
                 app:layout_constraintHorizontal_bias="0.496"
                 app:layout_constraintStart_toStartOf="@+id/et_pass"
                 app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="OR LOGIN WITH" />
 
     </LinearLayout>
 </LinearLayout>
