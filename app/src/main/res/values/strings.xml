@@ -2,5 +2,6 @@
     <string name="app_name">TeachIslamabad</string>
     <string name="email_id">Email id</string>
     <string name="pass">Password</string>
+    <string name="user">User Name</string>
     <string name="connecting_teachers_amp_n_schools_together"><![CDATA[Connecting Teachers & \n Schools Together]]></string>
 </resources>
