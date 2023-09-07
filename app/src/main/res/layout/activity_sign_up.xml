@@ -38,7 +38,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
 
 
                 <TextView
@@ -108,6 +109,9 @@
                     app:boxBackgroundMode="outline"
                     app:boxStrokeColor="#009688"
                     app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#F44336"
                     app:startIconTint="@color/lightblack"
                     android:textColorHint="@color/lightblack"
                     app:layout_constraintEnd_toEndOf="@+id/et_user"
@@ -120,7 +124,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/email_id"
-                        android:inputType="textWebEmailAddress|textPersonName"
+                        android:inputType="textWebEmailAddress"
                         android:textColor="@color/lightblack" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,6 +142,9 @@
                     app:counterMaxLength="15"
                     app:endIconMode="password_toggle"
                     app:errorEnabled="true"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#F44336"
                     app:layout_constraintEnd_toEndOf="@+id/et_email"
                     app:layout_constraintStart_toStartOf="@+id/et_email"
                     app:layout_constraintTop_toBottomOf="@+id/et_email"
@@ -168,6 +175,9 @@
                     app:boxStrokeColor="#009688"
                     app:counterEnabled="true"
                     app:counterMaxLength="15"
+                    app:helperTextEnabled="true"
+                    app:helperText="Required"
+                    app:helperTextTextColor="#F44336"
                     app:counterTextColor="@color/lightblack"
                     app:endIconMode="password_toggle"
                     app:errorEnabled="true"
